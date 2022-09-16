@@ -1,4 +1,4 @@
-# EDA-on-Ecommerce-Data
+# EDA using Ecommerce Data avaliable on Kaggle
 this is a simple, easy guide to understand what EDA means and how to do it
 EDA Exploratory Data Analysis is an essential process in doing Machine Learning, Data Science etc
 It helps to derive insight from data and without difficulty you can make sense of what the data is  saying
