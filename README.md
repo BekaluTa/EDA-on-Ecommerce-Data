@@ -9,4 +9,5 @@ if there is more please let me know as i hope to also learn from you
 2. Data Cleaning -- this takes about 70% of your time where you look for missing columns or values, where you rename and change dattype and many others
 3. THE EDA -- this is where you ask the Question like how many people came to the party, at what month does the company make it hihest profit etc
 4. Results -- Interpretation is what you do here you make sense of the question you ask based on the result you get
-and Finally 5. Conclusion. 
+and Finally
+5. Conclusion. 
