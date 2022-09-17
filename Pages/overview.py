@@ -14,36 +14,36 @@ sys.path.append(os.path.abspath(os.path.join('./scripts')))
 def overview_app():
     st.title("Overview")
     st.write(
-        "Sales Overview")
+        "EDA on Ecommerce")
     number = st.number_input("Enter the number of rows and press enter: ", min_value=None, max_value=None, value=0,
                              step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False)
 
-    df = pd.read_csv('./Data/train.csv', nrows=number)
+    df = pd.read_csv('./Data/data-2.csv', nrows=number)
     st.write(df)
 
-    st.header("Day of the Week")
-    top_df = pd.read_csv('./Data/train.csv')
+    st.header("Sales on on country wise")
+    top_df = pd.read_csv('./Data/data-2.csv')
 
-    fig = px.bar(top_df, x='Day of the Week', y='count', height=500)
+    fig = px.bar(top_df, x='InvoiceNo', y='InvoiceNo', height=500)
     st.plotly_chart(fig)
 
-    st.header("Top data usage per applications")
-    image = Image.open('./Data/salescustomprln.png')
-    st.image(image, caption="Applications", use_column_width=True)
+    st.header("Order differnce by Hour")
+    image = Image.open('./images/orderonhour.png')
+    st.image(image, caption="Order differnce by Hour", use_column_width=True)
 
-    st.header("Application Duration distribution using deciles")
-    image = Image.open('./image/Total session Gaming.png')
-    st.image(image, caption="Applications Duration Distribution",
+    st.header("Distribution of Unit Pricing")
+    image = Image.open('./image/unitprice.png')
+    st.image(image, caption="Unit Price Distribution",
              use_column_width=True)
 
-    st.header("Holliday Session")
-    image = Image.open('./Data/holidayseason.png')
-    st.image(image, caption="customer data based on holiday",
+    st.header("Number of customers")
+    image = Image.open('./Data/Numberofcust.png')
+    st.image(image, caption="Number of Customers Detail",
              use_column_width=True)
 
 
-    st.header("Prediction")
-    image = Image.open('./Data/Prediction image.png')
-    st.image(image, caption="Sales Prediction",
+    st.header("order by Countries")
+    image = Image.open('./images/order for_countries.png')
+    st.image(image, caption="Order by Countries",
              use_column_width=True)
 
