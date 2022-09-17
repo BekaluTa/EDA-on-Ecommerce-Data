@@ -5,9 +5,8 @@ from streamlit_option_menu import option_menu
 
 from Pages.home import home_app
 from Pages.overview import overview_app
-from Pages.predict import predict_app
 
-st.set_page_config(page_title="Sales Prediction on Pharmacy Data")
+st.set_page_config(page_title="Ecommerce EDA from Kaggle Dataset")
 
 slected = option_menu(
     menu_title=None,
@@ -22,12 +21,10 @@ styles = {
     "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#eee"},
     "nav-link-selected": {"background-color": "green"},
 }
-st.title("Sales Data Prediction")
+st.title("Ecommerce Exploratory Data Analysis")
 
 
 if slected == "Home":
     home_app()
 elif slected == "Overview":
     overview_app()
-else:
-    prdict_app()
