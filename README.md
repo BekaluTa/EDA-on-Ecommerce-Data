@@ -5,5 +5,5 @@
 * raise package  to view the notebook in Slide Type
 * Jupyter Notebook
 * Vs Code IDE
-# Contributeor
-* Bekalu tadele
+# Contributor
+* Bekalu Tadele
